@@ -38,16 +38,20 @@ header {
 
   .boxes {
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
     grid-gap: 20px;
   }
 
   .box {
     background-color: white;
+    text-align: center;
     color: black;
     font-size: 24px;
-    padding: 20px;
     border-radius: 8px;
+    padding: 20px;
 }
 
 footer {
@@ -67,6 +71,7 @@ footer {
 
   footer p {
     color: white;
+    text-align: center;
   } 
 
  @media (max-width: 800px) {
