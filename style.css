@@ -1,3 +1,6 @@
+body {
+    background: #233142;
+}
 header {
     max-width: 2000px;
     margin: 0 auto;
@@ -33,26 +36,39 @@ header {
     border: none;
   }
 
+  .boxes {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-gap: 20px;
+  }
 
-  footer{
-    max-width: 2000px;
-    margin: 0 auto;
+  .box {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    width: 100vw;
+    height: 200px;
+    padding: 0;
+    margin: 0;
     background-image: linear-gradient(
         rgba(235, 217, 217, 0.5),
         rgba(202, 186, 186, 0.5)
-      ),
-      url("images/cat2.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      text-align: center;
-      padding: 60px 0;
-  }
+    ), url("images/cat2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
   footer p {
     color: white;
   } 
-  
+
  @media (max-width: 800px) {
     header {
       padding: 30px 0;
@@ -61,6 +77,14 @@ header {
     header h1 {
       font-size: 20px;
     }
+    .boxes {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+      }
+
+      .box {
+        background: white;
+      }
     footer{
         padding: 30px 0;
     }
