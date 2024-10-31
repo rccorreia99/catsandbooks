@@ -1,0 +1,44 @@
+header {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("images/cat1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px 0;
+  }
+  header h1 {
+    color: white;
+  }
+
+  header h3 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  header p {
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  header button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  @media (max-width: 800px) {
+    header {
+      padding: 30px 0;
+    }
+    
+    header h1 {
+      font-size: 20px;
+    }
+  }
